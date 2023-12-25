@@ -1,0 +1,345 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+div #contenitore
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color:#eceeda;
+}
+
+div #header
+{
+    width: 100%;
+    min-height: 600px;
+    background-color:#eceeda;
+    text-align: center;
+    display: flex;
+}
+
+/*FOTO INIZIALE*/
+.sfondo
+{
+    width: 100%;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(../immagini//fade/fade.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_titolo
+{
+    color: #eaf397;
+    font-style: italic;
+}
+
+.name
+{
+    font-size: 50pt;
+}
+
+.sottotitolo
+{
+    font-size: 30pt;
+    margin-top: 20px;
+}
+
+/*GRID*/
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #eceeda;
+    padding: 10px;
+}
+
+.grid-item
+{
+    background-color: #eceeda;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.item1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1
+{
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.item2
+{
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+}
+
+/*CAROSELLO*/
+div #carosello
+{
+    width: 100%;
+    height: auto;
+    background-color:#eceeda;
+    float: left;
+}
+
+div #opere
+{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    text-align: center;
+    float: left;
+}
+
+.h1_opere
+{
+    font-size: 40pt;
+    font-style: italic;
+}
+
+div #scroll
+{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+div #img_scroll
+{
+    width: 950px;
+    height: 600px;
+    border-radius: 30px;
+}
+
+div #button
+{
+    text-align: center;
+}
+
+.button
+{
+    width: 130px;
+    height: 35px;
+}
+
+/*FORM*/
+div #sez_form
+{
+    width: 100%;
+    height: auto;
+    background-color:#eceeda;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div #sez_form_sx
+{
+    width: 50%;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+
+div #sez_form_sx
+{
+    width: 50%;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+
+.p_form
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    margin-top: 100px;
+}
+
+.Leggenda_form
+{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.date
+{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.time
+{
+    width: 100px;
+    margin-top: 5px;
+    margin-left:20px;
+    cursor: pointer;
+}
+
+.opz
+{
+    margin-top: 5px;
+    margin-left:20px;
+    cursor: pointer;
+}
+
+.number
+{
+    width: 90px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left:20px;
+}
+
+.comp
+{
+    width: auto;
+    margin-top: 5px;
+    cursor: text;
+    border-radius: 5px;
+}
+
+div #dati_perso
+{
+    width: 100%;
+    height: auto;
+    background-color: #eceeda;
+}
+
+.cas_dati
+{
+    width: 90%;
+    height: auto;
+    margin-left:20px;
+}
+
+.personali
+{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.aste
+{
+    color: red;
+    font-size: 15pt;
+}
+
+div #invio
+{
+    width: 100%;
+    height: auto;
+    background-color: #eceeda;
+}
+
+.submit
+{
+    margin-top: 20px;
+    margin-left:20px;
+    margin-bottom: 15px;
+    width: 150px;
+    height: 50px;
+    font-size: 14pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 15px;
+    border-color:#8e992e;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: 0.5s;
+}
+
+.submit:hover
+{
+    background-color:#eeedda;
+}
+
+div #footer
+{
+    width: 100%;
+    height: auto;
+}
+
+div #footer_img
+{
+    width: 50%;
+    height: 130px;
+    background-color: #bfc587;
+    float: left;
+    text-align: center;
+}
+
+div #footer_text
+{
+    width: 50%;
+    height: 130px;
+    background-color: #bfc587;
+    float: left;
+    text-align: center;
+}
+
+.img_footer
+{
+    width: 150px;
+    height: 105px;
+    border-radius: 20px;
+    margin-top: 15px;
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.img_footer:hover
+{
+    transform: scale(1.0);
+}
+
+.text_footer
+{
+    margin-top: 12px;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px)
+{
+    .img1
+    {
+        width: 120px;
+        height: 220px;
+        border-radius: 20px;
+    }
+
+    .item2
+    {
+        font-size:small;
+    }
+
+    div #img_scroll
+    {
+        width: 650px;
+        height: 300px;
+        border-radius: 30px;
+    }
+}

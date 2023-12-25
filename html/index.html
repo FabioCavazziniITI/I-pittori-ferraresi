@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Palazzo Diamanti - de Pisis
+        </title>
+        <link rel="icon" href="../immagini/head/title.jpg" type="image/png">
+        <link rel="stylesheet" type="text/css" href="../css/home.css" media="all">
+        <script src="../javascript/javascript.js"></script>
+    </head>
+    <body onload="load()">
+        <div id="contenitore">
+            <!--TITOLO-->
+            <div id="header">
+                <!--Sfondo-->
+                <div class="sfondo">
+                    <h1 class="text_titolo">
+                        <p class="name">
+                            Palazzo Diamanti
+                        </p>
+                        <p class="sottotitolo">
+                            Mostra di Filippo de Pisis
+                        </p>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item item1">
+                    <img class="img1" src="../immagini/body/de_Pisis.jpg">
+                </div>
+                <div class="grid-item item2">
+                    <p>
+                        Luigi Filippo Tibertelli, noto come Filippo de Pisis, nasce a Ferrara nel 1896.
+                        <br><br>
+                        Nel 1914 si iscrive alla facoltà di Lettere all’Università di Bologna. Frequenta ritrovi culturali e artistici;
+                        studia la cultura ferrarese antica, scrivendo dei saggi su artisti minori del passato, ma s’interessa anche alle riviste d’avanguardia, come “La Voce” e “Lacerba”.
+                        Esordisce in campo letterario con <I>I Canti della Croara</I> e con una raccolta di poemetti intitolata <I>La lampada</I>.
+                        <br><br>
+                        Nel settembre del 1916, a Ferrara, conosce i due fratelli de Chirico e incontra Carlo Carrà.
+                        <br><br>
+                        Dopo la laurea nel 1920, Filippo de Pisis si trasferisce a Roma, dove visita musei, tiene conferenze e frequenta gli ambienti culturali della città come il Caffè
+                        Greco e il Caffè Aragno. Nel marzo del 1920 espone per la prima volta alla Galleria d’Arte Bragaglia, non riscuotendo particolare successo. Nel marzo 1925 giunge
+                        a Parigi, dove rimane fino al 1939 interrompendo questo soggiorno con frequenti ritorni in Italia e con alcuni brevi viaggi in Europa. A Parigi frequenta
+                        il Louvre.
+                        <br><br>
+                        Nel 1947 Filippo de Pisis si reca nuovamente a Parigi, ma è costretto per gravi motivi di salute a tornare in Italia, dove trascorre gli ultimi anni della sua
+                        vita. Qui, costretto a lunghe degenze in case di cura, continua a dipingere e a disegnare, fino a quando l’aggravarsi delle sue condizioni di salute non lo
+                        costringono ad abbandonare i pennelli per disegnare a penna. I suoi ultimi lavori, infatti, sono dei rapidi inchiostri eseguiti nei primi mesi del 1953. Alcuni
+                        mesi dopo la sua morte, avvenuta a Milano nell’aprile del 1956, la XXVIII Biennale di Venezia lo ricorda con un’importante retrospettiva di sessantacinque opere,
+                        presentate in catalogo da Francesco Arcangeli.
+                    </p>
+                </div> 
+            </div>
+
+            <!--CAROSELLO-->
+            <div id="carosello">
+                <div id="opere">
+                    <h1 class="h1_opere">
+                        Le opere di de Pisis
+                    </h1>
+                </div>
+                <div id="scroll">
+                    <center>
+                        <img id="img_scroll" src="../immagini/body/f1.jpg">
+                    </center>
+                </div>
+                <div id="button">
+                    <button type="button" class="button" onclick="aggiungi()">
+                        opera successiva
+                    </button>
+                </div>
+            </div>
+
+            <!--FORM PRENOTAZIONE-->
+            <form id="form">
+                <div id="sez_form">
+                    <h1 class="p_form">
+                        Prenotazione visita
+                    </h1>
+                    
+                    <!--DATI ISCRIONZE-->
+                    <div id="sez_form_sx">
+                        <!--SCELTA GIORNO-->
+                        <legend class="Leggenda_form">
+                            Scegliere giorno visita<b class="aste">*</b>
+                            <br>
+                            <input class="date" type="date" id="date"  value="" required>
+                        </legend>
+
+                        <!--SCELTA ORARIO-->
+                        <legend class="Leggenda_form">
+                            Selezionare orario visita<b class="aste">*</b>
+                        </legend>
+                        <select class="time" id="orario">
+                            <option value="--" selected="selected">
+                                Orario
+                            </option>
+                            <option value="08:00">
+                                08:00
+                            </option>
+                            <option value="10:00">
+                                10:00
+                            </option>
+                            <option value="12:00">
+                                12:00
+                            </option>
+                            <option value="14:30">
+                                14:30
+                            </option>
+                            <option value="16:00">
+                                16:00
+                            </option>
+                            <option value="18:00">
+                                18:00
+                            </option>
+                            <option value="20:00">
+                                20:00
+                            </option>
+                        </select>
+    
+                        <!--SCELTA TIPOLOGIA-->
+                        <legend class="Leggenda_form">
+                            Selezionare tipologia visita<b class="aste">*</b>
+                        </legend>
+                        <input class="opz" type="radio" name="tipo_visita" id="tipo" value="con">
+                            Con guida (10.00 &euro;)
+                        <br>
+                        <input class="opz" type="radio" name="tipo_visita" id="tipo" value="senza">
+                            In autonomia (5.00 &euro;)
+
+                        <!--SCELTA NUMERO PARTECIPANTI-->
+                        <legend class="Leggenda_form">
+                            Inserire numero partecipanti
+                        </legend>
+                        <input class="number" type="number" id="number" value="" min="2" max="20" placeholder="Min. 2">
+                    </div>
+
+                    <!--DATI PERSONALI-->
+                    <div id="sez_form_dx">
+                        <!--INSERIMENTO NOME E COGNOME-->
+                        <legend class="Leggenda_form">
+                            Nome e Cognome<b class="aste">*</b>
+                        </legend>
+                        <input class="comp" type="text" id="name" placeholder="Nome Cognome"  value="" required>
+
+                        <!--INSERIMENTO EMAIL-->
+                        <legend class="Leggenda_form">
+                            Indirizzo email<b class="aste">*</b>
+                        </legend>
+                        <input class="comp" type="email" id="email"  value="" placeholder="email" required>
+
+                        <!--INSERIMENTO MESSAGGIO-->
+                        <legend class="Leggenda_form">
+                            Telefono<b class="aste">*</b>
+                        </legend>
+                        <input class="comp" type="tel" id="cell"  value="" placeholder="cellulare" required>
+                    </div>
+                </div>
+
+                <!--TRATTAMENTO DATI PERSONALI-->
+                <div id="dati_perso">
+                    <div class="cas_dati">
+                        <legend class="Leggenda_form_dati">
+                            <b>
+                                Trattamento dati personali <b class="aste">*</b>
+                            </b>
+                        </legend>
+                        <input class="personali" type="checkbox" name="" value="Autorizzo" required>
+                            Autorizzo il trattamento dei miei dati personali, ai sensi del D. lgs. 196 del 30 giugno 2003
+                    </div>
+                </div>
+
+                <!--INVIO-->
+                <div id="invio">
+                    <center>
+                        <input class="submit" type="submit" value="Ordina ed invia" onclick="prenota()">
+                    </center>
+                </div> 
+            </form>
+
+            <!--PIÃˆ DI PAGINA-->
+            <div id="footer">
+                <!--FOOTER SINISTRO-->
+                <div id="footer_img">
+                    <a href="http://www.iiscopernico.edu.it/" target="_blank">
+                        <img class="img_footer" src="../immagini/footer/Stemma_ITI.png" alt="Logo ITI cliccabile">
+                    </a>
+                </div>
+
+                <!--FOOTER DESTRO-->
+                <div id="footer_text">
+                    <div class="text_footer">
+                        <I>
+                            <a href="http://www.iiscopernico.edu.it/" target="_blank">
+                                IIS "N.Copernico - Carpeggiani"
+                            </a>
+                        </I>
+                        </br>
+                        </br>
+                        &#0169 Cavazzini Fabio
+                        </br>
+                        <a href="mailto:fabio.cavazzini@iticopernico.it">
+                            fabio.cavazzini@iticopernico.it
+                        </a>
+                        </br>
+                        Classe IV G
+                        </br>
+                        A.S. 2023 - 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
